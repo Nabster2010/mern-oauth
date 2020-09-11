@@ -47,9 +47,9 @@ app.use(express.json());
 app.use(express.static('client/build'));
 
 //routes
-app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, './client/build/index.html'));
-});
+// app.get('/', (req, res) => {
+// 	res.sendFile(path.join(__dirname, './client/build/index.html'));
+// });
 app.use('/auth', require('./routes/auth.routes'));
 app.use('/users', require('./routes/user.routes'));
 // app.use('/profile', require('./routes/profile.routes'));
